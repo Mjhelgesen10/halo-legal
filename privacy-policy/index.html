@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — HALO</title>
+<style>
+    :root { color-scheme: light dark; }
+    body { margin:0; background:#faf9f7; color:#1a1a1c;
+           font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+    .wrap { max-width: 44rem; margin:0 auto; padding: 3rem 1.25rem 5rem; }
+    h1 { font-size:2rem; line-height:1.2; margin:0 0 .25rem; letter-spacing:-.02em; }
+    h2 { font-size:1.2rem; margin:2.5rem 0 .75rem; letter-spacing:-.01em; }
+    h3 { font-size:1rem; margin:1.75rem 0 .5rem; color:#3a3a3f; }
+    p, li { color:#2c2c30; }
+    code { background:#efede9; padding:.1em .35em; border-radius:4px; font-size:.9em; }
+    hr { border:0; border-top:1px solid #e3e0da; margin:2.5rem 0; }
+    table { border-collapse:collapse; width:100%; margin:1rem 0; font-size:.94rem; display:block; overflow-x:auto; }
+    th, td { border:1px solid #e3e0da; padding:.5rem .7rem; text-align:left; vertical-align:top; }
+    th { background:#f2f0ec; }
+    a { color:#9a7320; }
+    .meta { color:#6b6b70; font-size:.9rem; margin:0 0 2rem; }
+    @media (prefers-color-scheme: dark) {
+      body { background:#0e0e10; color:#e8e6e3; }
+      p, li { color:#d5d2ce; } h3 { color:#b8b5b0; }
+      code { background:#1e1e22; } hr { border-top-color:#2a2a2e; }
+      th, td { border-color:#2a2a2e; } th { background:#1a1a1e; }
+      a { color:#d4a856; } .meta { color:#8a8a90; }
+    }
+</style>
+</head><body><div class="wrap">
+<h1>HALO Privacy Policy</h1>
+<p><strong>Last updated: 10 October 2026</strong></p>
+<p>HALO is a health and performance application published by <strong>HelgesenHealth Corp.</strong> (&quot;HALO&quot;, &quot;we&quot;, &quot;us&quot;). This policy explains what the app collects, where it is stored, who it is shared with, and what control you have over it.</p>
+<p>HALO handles sensitive health information — blood test results, sleep, body composition, medications and supplements. We have tried to describe this plainly rather than generically, including the places where your data leaves our systems.</p>
+<p><strong>Contact:</strong> mjhelgesen10@gmail.com</p>
+<hr>
+<h2>1. Information we collect</h2>
+<h3>Account</h3>
+<ul><li>Email address and authentication credentials, used to create and secure your account.</li></ul>
+<h3>Profile and health background</h3>
+<ul><li>Date of birth, biological sex, ethnicity, height, weight, body-fat percentage, goal weight</li><li>Chronic conditions, family medical history</li><li>Current medications, supplements and peptides, including doses</li><li>Hormone therapy status (TRT/HRT) and dosing, where you provide it</li></ul>
+<p>Ethnicity is collected because several clinical reference ranges are stratified by it. It is used for that purpose only.</p>
+<h3>Blood work</h3>
+<ul><li>Lab panels: biomarker names, values, units, reference ranges, flags, lab source and draw date</li><li><strong>PDF lab reports you upload</strong></li><li>Blood-draw appointments you record</li></ul>
+<h3>Nutrition</h3>
+<ul><li>Meals and foods logged, including portions, macronutrients and micronutrients</li><li>Meal preferences, meal timing, dietary restrictions and allergies</li><li>Foods scanned by barcode</li><li>Free-text descriptions of meals you type</li></ul>
+<h3>Training</h3>
+<ul><li>Workout sessions, exercises, sets, weights, repetitions and reps-in-reserve</li><li>Routines and custom exercises you create</li><li>Perceived session difficulty and related subjective ratings</li><li>Cardio sessions, heart-rate zones and estimated maximum heart rate</li></ul>
+<h3>Sleep and recovery</h3>
+<ul><li>Sleep sessions: duration, stages, efficiency</li><li>Heart-rate variability, resting heart rate, skin temperature</li><li>Daily vitals, including blood pressure if you choose to track it</li></ul>
+<h3>Connected devices</h3>
+<p>If you connect a wearable, we receive the data that device exposes:</p>
+<ul><li><strong>Oura</strong> — sleep, readiness, activity summaries</li><li><strong>WHOOP</strong> — strain, recovery, sleep</li><li><strong>Apple Health</strong> — heart rate, HRV, activity, workouts, sleep</li></ul>
+<p>Connecting a device is optional. HALO works without one.</p>
+<h3>Subscription and technical data</h3>
+<ul><li>Subscription and purchase status, handled by RevenueCat</li><li>Device push-notification tokens, used for reminders you enable</li><li>Basic diagnostic information such as error logs</li></ul>
+<hr>
+<h2>2. How your information is used</h2>
+<ul><li>To calculate your nutrition targets, training plan, sleep guidance and supplement recommendations</li><li>To interpret blood work against clinical and optimal reference ranges</li><li>To adapt those plans over time as your logged data changes</li><li>To send reminders and notifications you have enabled</li><li>To operate, secure, support and improve the service</li></ul>
+<p>We do <strong>not</strong> sell your personal information. We do <strong>not</strong> use your health data for advertising.</p>
+<hr>
+<h2>3. Where your data is stored</h2>
+<p>Your data is stored in a <strong>Supabase</strong> (PostgreSQL) database hosted on Amazon Web Services in the <strong>US-West-2 (Oregon)</strong> region, in the United States.</p>
+<p>Access is restricted by row-level security policies so that your records are readable and writable only by your authenticated account.</p>
+<p>Authentication tokens for connected wearables are stored <strong>on your device</strong> in the operating system&#x27;s secure keychain, not on our servers.</p>
+<p>If you are located outside the United States, your information will be transferred to and processed in the United States.</p>
+<hr>
+<h2>4. Third parties who process your data</h2>
+<h3>Anthropic (Claude API) — important</h3>
+<p>HALO uses Anthropic&#x27;s Claude API for several features. In the course of those features, the following is transmitted to Anthropic:</p>
+<ul><li><strong>The PDF lab reports you upload.</strong> When you add blood work, the document is</li></ul>
+<p>  sent to Anthropic&#x27;s API so the biomarker values can be extracted   automatically. The report&#x27;s contents — including your name and any other   personal details printed on it — are included in that transmission.</p>
+<ul><li><strong>Blood-work analysis context</strong>, when interpretation is generated.</li><li><strong>Free-text meal descriptions</strong> you type, so they can be parsed into foods and</li></ul>
+<p>  portions.</p>
+<ul><li><strong>Meal composition data</strong>, when a meal is checked for coherence.</li></ul>
+<p>Anthropic processes this data as a service provider in order to return a result to the app. Their handling is governed by Anthropic&#x27;s own privacy policy and commercial terms.</p>
+<p>If you prefer not to have lab reports processed this way, do not upload PDF lab reports; biomarker values can be entered manually instead.</p>
+<h3>Other processors</h3>
+<table>
+<tr><th>Provider</th><th>Purpose</th><th>What they receive</th></tr>
+<tr><td><strong>Supabase</strong></td><td>Database and authentication</td><td>All account and health data described above</td></tr>
+<tr><td><strong>RevenueCat</strong></td><td>Subscription management</td><td>Purchase and subscription status, device identifiers</td></tr>
+<tr><td><strong>Expo / EAS</strong></td><td>App delivery and push notifications</td><td>Device push tokens, crash and build diagnostics</td></tr>
+<tr><td><strong>USDA FoodData Central</strong></td><td>Nutrition reference data</td><td>Food search terms only</td></tr>
+<tr><td><strong>Open Food Facts</strong></td><td>Barcode lookups</td><td>Scanned barcode numbers only</td></tr>
+<tr><td><strong>Oura, WHOOP</strong></td><td>Wearable data, if connected</td><td>Authorization requests; we read data from them</td></tr>
+<tr><td><strong>Apple HealthKit</strong></td><td>Wearable data, if permitted</td><td>Processed on your device under Apple&#x27;s permissions</td></tr>
+</table>
+<h3>Links to other services</h3>
+<p>HALO contains links to outside services — food-delivery apps, supplement retailers, laboratory providers and research databases. Following a link takes you to that company&#x27;s own site, governed by their privacy policy. We do not transmit your health data to them.</p>
+<hr>
+<h2>5. Your choices and rights</h2>
+<ul><li><strong>Access and export.</strong> You may request a copy of your data.</li><li><strong>Correction.</strong> Profile, logs and blood work can be edited in the app.</li><li><strong>Deletion.</strong> You may delete your account, which removes your personal data from our systems. Request this in the app or by email.</li><li><strong>Disconnect a device.</strong> Wearable connections can be revoked at any time in the app; revoking deletes the stored tokens from your device.</li><li><strong>Notifications.</strong> Reminders can be disabled in the app or in your device settings.</li><li><strong>Health permissions.</strong> Apple Health access can be withdrawn in iOS Settings → Privacy &amp; Security → Health.</li></ul>
+<p>Depending on where you live, you may have additional rights — including rights under the EU/UK GDPR or the California Consumer Privacy Act — such as the right to object to processing, to request portability, or to lodge a complaint with a supervisory authority. Contact us at the address above to exercise them.</p>
+<hr>
+<h2>6. Data retention</h2>
+<p>We retain your data while your account is active. When you delete your account, your personal data is deleted from our production database. Backups are purged on their normal rotation schedule.</p>
+<hr>
+<h2>7. Security</h2>
+<ul><li>All data is transmitted over encrypted connections (TLS).</li><li>Database access is restricted per user by row-level security.</li><li>Wearable tokens are held in the device secure keychain.</li></ul>
+<p>No system is perfectly secure, and we cannot guarantee absolute security.</p>
+<hr>
+<h2>8. Children</h2>
+<p>HALO is not intended for anyone under 18, and we do not knowingly collect information from children. If you believe a child has provided us data, contact us and we will delete it.</p>
+<hr>
+<h2>9. Medical disclaimer</h2>
+<p>HALO is not a medical device and does not provide medical advice, diagnosis or treatment. Its outputs — including blood-work interpretation, supplement suggestions and training or nutrition plans — are informational. Always consult a qualified clinician before acting on them, particularly regarding medications, supplements or any diagnosed condition.</p>
+<hr>
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy. Material changes will be announced in the app or by email, and the &quot;Last updated&quot; date above will change.</p>
+<hr>
+<h2>11. Contact</h2>
+<p><strong>HelgesenHealth Corp.</strong> mjhelgesen10@gmail.com</p>
+</div></body></html>
